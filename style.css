@@ -1,0 +1,93 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-color: rgb(225, 209, 248);
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    
+}
+
+h1{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+button{
+    background-color: rebeccapurple;
+    color: white;
+    padding: 10px 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+button:hover{
+    background-color: rgb(129, 82, 175);
+    transition: 0.2s;
+}
+
+
+/* Container */
+
+.border{
+    background-color: rgba(0,0,0,.1);
+    /* border: solid 1px #000; */
+    border-radius: 10px;
+    min-height: 95vh;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.game__history{
+    max-width: 400px;
+}
+
+.game__title__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.game__result{
+    border-bottom: solid 1px purple;
+}
+.game__result ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+.game__result li{
+    margin: 5px;
+}
+
+
+
+.choice__wrapper{
+    padding: 20px;
+}
+
+
+/* Text */
+.game__result h3{
+    text-align: center;
+    margin: 0px;
+}
