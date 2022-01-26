@@ -190,8 +190,8 @@ button:hover{
 
 /* button colors */
 .in__game{
-    background-color: green;
+    background: linear-gradient(180deg, #44b37f 0%, #1faf71 100%);
 }
 .in__game:hover{
-    background-color: rgb(73, 158, 73);
+    background: linear-gradient(180deg, #368d64 0%, #1e9e67 100%);
 }

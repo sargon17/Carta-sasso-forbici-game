@@ -141,6 +141,8 @@ function showResult(playerStat,computerPoints,playerPoints){
 }
 
 
+
+// Game Mode Button Selector
 function checkBtn(){
     if(betterOfThree){
         betterOfThreeButton.classList.add("in__game");
@@ -148,6 +150,8 @@ function checkBtn(){
         betterOfThreeButton.classList.remove("in__game");
     }
 };
+
+
 
 function endGame(playerPoints,computerPoints){
     winnerChecker(playerPoints,computerPoints);
