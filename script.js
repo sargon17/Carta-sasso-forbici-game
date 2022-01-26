@@ -14,16 +14,18 @@ let resultDisplaySection = document.querySelector(".win_loss_result");
 let restartButton = document.querySelector("#restart__button")
 let endGameButton = document.querySelector("#end__game");
 
- computerPoints = 0;
- humanPoints = 0;
- gameCounter = 0;
+let computerPoints = 0; 
+let humanPoints  = 0;
+let gameCounter = 0;
 
 let betterOfThree = false;
 
+
+
+// Main game logic
 function cartaSassoForbici(selection) {
     let compSelection = ["carta","sasso","forbici"];
     let randSelection = compSelection[Math.floor(Math.random() * 3)];
-    console.log("computer choice: " + randSelection)
     let playerStatus = "";
     if(selection === "carta"){
         if(randSelection === "carta"){
@@ -51,7 +53,6 @@ function cartaSassoForbici(selection) {
         }
     }
     gameCounter++;
-    console.log(playerStatus);
     resultDisplay(playerStatus,randSelection,selection);
     counterUpdate(playerStatus);
     updateStoryList(playerStatus, randSelection, selection, computerPoints, humanPoints);
@@ -159,6 +160,17 @@ function endGame(playerPoints,computerPoints){
 
 
 
+
+// event that allow to play with the keyboard
+document.addEventListener("keydown", event => {
+    if(event.key === "c"){
+        cartaSassoForbici("carta")
+    } else if( event.key === "s"){
+        cartaSassoForbici("sasso")
+    } else if( event.key === "f"){
+        cartaSassoForbici("forbici")
+    }
+})
 
 
 cartaBtn.addEventListener("click", ()=> {cartaSassoForbici("carta")});

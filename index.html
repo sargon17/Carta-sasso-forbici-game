@@ -1,75 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Carta Sasso Forbici</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
-    </head>
-    <body>
-        <div class="game__wrapper border">
-            <div class="game__title__wrapper">
-                <h1>Carta Sasso o forbici?</h1>
-            </div>
-            <div class="game">
-                <div class="game__result">
-                    <h3 id="player__status">Hai Perso</h3>
-                    <ul>
-                        <li id="computer__choice">computer: <strong>Sasso</strong></li>
-                        <li id="human__choice">human: <strong>Forbici</strong></li>
-                    </ul>
-                </div>
-                <div class="choice__wrapper center">
-                    <button id="Carta__btn">Carta</button>
-                    <button id="Sasso__btn">Sasso</button>
-                    <button id="Forbici__btn">Forbici</button>
-                </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carta Sasso Forbici</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="game__wrapper border">
+      <div class="game__title__wrapper">
+        <h1>Carta Sasso o forbici?</h1>
+      </div>
+      <div class="game">
 
 
-                <!-- Game Mode Selector Start -->
-                <div class="game__mode__wrapper">
-                    <h4>Scegli la modalità di gioco</h4>
-                    <div class="center">
-                        <button id="btrOfThree">Better Of Three</button>
-                    </div>
-
-                </div>
-                <div class="end__game__wrapper">
-                    <button id="end__game">Concludi Partita</button>
-                </div>
-                <!-- Game Mode Selector End -->
-            </div>
-
+        <!-- Game Zone -->
+        <!-- Result Display -->
+        <div class="game__result">
+          <h3 id="player__status">Hai ---</h3>
+          <ul>
+            <li id="computer__choice">computer: <strong>-</strong></li>
+            <li id="human__choice">human: <strong>-</strong></li>
+          </ul>
         </div>
-        <div class="game__history border">
-            <div class="counter__wrapper">
-                <div class="game__counter center">
-                    <p id="computer__counter">0</p>
-                    <p>:</p>
-                    <p id="player__counter">0</p>
-                </div>
-                <div class="player__names">
-                    <p>computer</p>
-                    <p>human</p>
-                </div>
-            </div>
-            <div class="game__story__list">
-                <ul id="game__story__lists">
-                </ul>
+        <!-- /Result Display -->
 
-            </div>
+        <!-- Game Buttons -->
+        <div class="choice__wrapper center">
+          <button id="Carta__btn">Carta</button>
+          <button id="Sasso__btn">Sasso</button>
+          <button id="Forbici__btn">Forbici</button>
         </div>
-        <div class="win_loss_result undisplay">
-            <div class="result_wrapper">
-                <div class="result_output_wrapper">
-                    <h4 id="text_result">You Win</h4>
-                    <h4 id="number_result">1 : 0</h4>
-                    <button id="restart__button">Restart</button>
-                </div>
-            </div>
+        <!-- /Game Buttons -->
+        <!-- Game Zone -->
 
+        <!-- Game Mode Selector Start -->
+        <div class="game__mode__wrapper">
+          <h4>Scegli la modalità di gioco</h4>
+          <div class="center">
+            <button id="btrOfThree">Better Of Three</button>
+          </div>
         </div>
-    </body>
-
+        <div class="end__game__wrapper">
+          <button id="end__game">Concludi Partita</button>
+        </div>
+        <!-- /Game Mode Selector -->
+      </div>
+    </div>
+    <div class="game__history border">
+      <div class="counter__wrapper">
+        <div class="game__counter center">
+          <p id="computer__counter">0</p>
+          <p>:</p>
+          <p id="player__counter">0</p>
+        </div>
+        <div class="player__names">
+          <p>computer</p>
+          <p>human</p>
+        </div>
+      </div>
+      <div class="game__story__list">
+        <ul id="game__story__lists"></ul>
+      </div>
+    </div>
+    <div class="win_loss_result undisplay">
+      <div class="result_wrapper">
+        <div class="result_output_wrapper">
+          <h4 id="text_result">You Win</h4>
+          <h4 id="number_result">1 : 0</h4>
+          <button id="restart__button">Restart</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
